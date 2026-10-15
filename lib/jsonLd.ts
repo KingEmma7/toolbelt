@@ -53,7 +53,7 @@ export function breadcrumbJsonLd(tool: Tool) {
 
 // FAQPage. Only call this for tools that actually render an FAQ section
 // (tool.faqs.length > 0), so the markup is always a true representation of the
-// visible page. json-formatter has no FAQs and must not emit this.
+// visible page, including json-formatter's FAQs.
 export function faqJsonLd(tool: Tool) {
   return {
     "@context": "https://schema.org",
